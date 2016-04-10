@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        ( function(){
+
+            try{
+                for( var i = 0 ; i < 10 ; i ++ ){
+                    document.writeln( i );
+                    if( i > 6){
+                        throw new Error( "what the hell!" );
+                    }
+
+                }
+
+            }
+
+
+        } )();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
