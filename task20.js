@@ -88,10 +88,9 @@ function Search()
 {
 
     var ht = "";
-    var mat = queue_block.innerHTML.match( input_string );
+    var mat = queue_block.innerHTML.match( input_string.value );
     if( mat != null && mat.length > 0 ){
-
-        queue_block.innerHTML = queue_block.innerHTML.replace(new RegExp(mat, "g"), '<span class ="sel">' + mat + '</span>')
+        queue_block.innerHTML = queue_block.innerHTML.replace(new RegExp(mat, "g"), '<span class ="sel">' + mat + '</span>');
     }
 
 

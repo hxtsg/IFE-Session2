@@ -76,7 +76,6 @@ function left_move_out()
     }
     alert( data[ 0 ]);
     data = data.slice(1);
-
 }
 
 
@@ -98,7 +97,6 @@ right_in.addEventListener("click",function(){ right_move_in(); render(); }, "fal
 right_out.addEventListener("click",function(){ right_move_out(); render(); }, "false");
 queue_block.addEventListener("click",
     function(ev){
-
         if( ev.target.nodeName.toLowerCase() == 'div1' ){
             var index = ev.target.getAttribute("index");
             data.splice(index,1);
